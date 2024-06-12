@@ -115,7 +115,7 @@ DATABASES = {
         'PORT': '20103',  # Your database port
         'OPTIONS': {
             'ssl': {
-                'ca': '/Users/Adwait/Desktop/persona/certificates',  # Path to the CA certificate provided by Aiven
+                'ca': 'persona/certificates/ca.cer',  # Path to the CA certificate provided by Aiven
             }
         }
     }
