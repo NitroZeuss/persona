@@ -8,5 +8,6 @@ from rest_framework.viewsets import ModelViewSet
 class MessageViewSet(ModelViewSet):
     queryset = message.objects.all()
     serializer_class = MessageSerializer
+       
 
 
