@@ -108,14 +108,15 @@ WSGI_APPLICATION = "persona.wsgi.application"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'defaultdb',  # Your database name
-        'USER': 'avnadmin',   # Your database user
-        'PASSWORD': 'AVNS_zJfFMIm6ibal5oFuyKV',  # Your database password
-        'HOST': 'mysql-22ebb82a-adwaitprime-a12a.d.aivencloud.com',  # Your database host
-        'PORT': '20103',  # Your database port
+        'NAME': 'defaultdb',
+        'USER': 'avnadmin',
+        'PASSWORD': 'AVNS_zJfFMIm6ibal5oFuyKV',
+        'HOST': 'mysql-22ebb82a-adwaitprime-a12a.d.aivencloud.com',
+        'PORT': '20103',
         'OPTIONS': {
             'ssl': {
-                'ca': 'persona/certificates/ca.cer',  # Path to the CA certificate provided by Aiven
+                'ca': '/persona/certificates/',
+                'disabled': True  # Path to the CA certificate provided by Aiven
             }
         }
     }
