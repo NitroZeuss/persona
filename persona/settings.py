@@ -116,7 +116,7 @@ DATABASES = {
         'PORT': '20103',
         'OPTIONS': {
             'ssl': {
-                'ca': 'persona/certificates/ca.cer',  # Path to the CA certificate provided by Aiven
+                'ca': os.path.join(BASE_DIR, 'certs', 'ca.cer')
             }
         }
     }
